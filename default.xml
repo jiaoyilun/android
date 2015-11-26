@@ -12,6 +12,10 @@
 
   <remote  name="private"
            fetch="ssh://git@github.com" />
+           
+<remote name="suda"
+          fetch="https://github.com"
+          review=".." />      
 
   <default revision="refs/heads/cm-12.1"
            remote="github"
@@ -23,7 +27,7 @@
   </project>
 
   <project path="android" name="CyanogenMod/android" />
-
+  <project path="external/suda/SudaSDKs" remote="suda" revision="sm-1.1" name="SudaMod/android_external_suda_SudaSDKs" />
   <project path="abi/cpp" name="CyanogenMod/android_abi_cpp" groups="pdk" />
   <project path="art" name="CyanogenMod/android_art" groups="pdk" />
   <project path="bionic" name="CyanogenMod/android_bionic" groups="pdk" />
